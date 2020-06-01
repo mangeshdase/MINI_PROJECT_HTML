@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<title>Aatm Nirbhar Bharat Yojana</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -15,19 +15,20 @@ body {
 }
 
 .header {
-  padding: 80px;
+  padding: 10px;
   text-align: center;
   color: black;
 }
 
 .header h1 {
   font-size: 40px;
+  text-align: center;
 }
 
 
 .navbar {
   overflow: hidden;
-  background-color:#333;
+  background-color:green;
 }
 
 
@@ -46,8 +47,9 @@ body {
   color: black;
 }
 .p{
-  border-style: solid;
+  border-style:lighter;
    overflow: hidden;
+   text-align: center;
    background-color:#333;
  border-width: 20px 10px; 
 }
@@ -179,12 +181,13 @@ body {
 }
 
 </style>
+<body>
 <p class="p"></p>
 <table>
 <tr>
 <td>
 <div align="left">
-<img src ="emblem-dark.png" height="200px" width="100px">
+<img src ="emblem-dark.png" height="100px" width="100px">
 </div>
 </td>
 <td>
@@ -199,9 +202,10 @@ body {
 
 <div class="navbar">
   <a href="#">HOME</a>
-  <a href="#">ABOUT THE SCHEME</a>
-  <a href="#">GUIDLINES</a>
-  <a href="#">FAQ</a>
+  <a href="#">POOR & INCLUDING MIGRATES</a>
+  <a href="#">AGRICULTURE</a>
+  <a href="#">BUINESSES INCLUDEING MEMS </a>
+
   <a href="#">CONTACT US</a>
   <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</a>
  
@@ -246,31 +250,75 @@ window.onclick = function(event) {
 }
 </script>
 </div>
-<table>
-<tr>
-<td>
-<div align="left">
-<img src ="farmerr.png" height="800px" width="1000px">
- </div></td>
- <td>
- <h1><h1></td>
-<td>
-<ul><h1>Five Pillars of atmanirbhar Bharat</h1>
-<h2>
-<li style=color:red>Economy</li><br>
-<li style=color:Blue>Infrastructure</li><br>
-<li style=color:green>System</li><br>
-<li style=color:orange>Vibrant Demography</li><br>
-<li style=color:purple>Demand</li><br>
-</h2>
-</td>
-<td>
-<div align="center">
-<img src ="pm_pic.jpg" height="400px" width="400px">
- </div></td>
+<style>
+.mySlides {display:none;
+align: center;}
+</style>
+  <img class="mySlides" src="poor.png" height="300px" width="100%">
+  <img class="mySlides" src="img2.png" height="300px" width="100%">
+  <img class="mySlides" src="img3.png" height="300px" width="100%">
+  <img class="mySlides" src="farmerr.png" height="300px" width="100%">
+  <img class="mySlides" src="agri.png" height="300px" width="100%">
+  <img class="mySlides" src="img1.png" height="300px" width="100%">
 
-</tr>
-</table>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+<style>
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.column{
+float: left;
+width: 50%;
+padding: 10px;
+height: 200px;
+}
+</style>
+<style>
+.pm {
+object-fit: ;
+}
+</style>
+<h2 align="center";>Vision</h2>
+
+
+<div class="row">
+  <div class="column"><ul>
+    <li>Self-Reliant India Movement</li>
+<li><b>Five Pillars of Atmanirbhar Bharat-</b>Economy, Infrastructure, System, Vibrant Demography and Demand</li>
+<li><b>Special Economic and Comprehnsive Package of 20 Lack crores-</b> equivalent to 10% of India's GDP</li>
+<li ><a href="PradhanMantriGaribKalyanPackage.html">Pradhan Mantri Garib Kalyan Paclage</a></li>
+<li>Package to cater to various sections including cottage industry,MSMEs,laboures, middle class, industries, among others.</li>
+<li> Bold reforms across sectors will drive the country's push towards self-reliance.</li>
+<li>It is time to<b> become vocal for our local products and make them global</b>.</li>
+</ul>
+  </div>
+  <div class="column" >
+    <img src="pm_pic.jpg" alt="PM Narendra Modi" class= "pm" style="width:100%;height:100%">
+  </div>
+</div>
+<div>
+<div class="column"><h2>Other Measures</h2>
+
+</div>
+<div class="column"><h2>Measures Taken by RBI</h2>'
+</div>
 
 </body>
 </html>
