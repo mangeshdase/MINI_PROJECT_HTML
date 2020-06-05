@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AGRICULTUREAatm Nirbhar Bharat Yojana</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.header h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color:green;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.p{
+  border-style:lighter;
+   overflow: hidden;
+   text-align: center;
+   background-color:#333;
+ border-width: 20px 10px; 
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: lightpink;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+
+
+
+</style>
+</head>
+
+<body>
+<p class="p"></p>
+<table>
+<tr>
+<td>
+<div align="left">
+<img src ="emblem-dark.png" height="100px" width="100px">
+</div>
+</td>
+<td>
+<div class="header">
+<h1>Aatm Nirbhar Bharat Abhiyan</h1> </div></td>
+
+
+</table>
+  <style>
+body {
+
+  background-image:linear-gradient(to bottom right, white,lightgreen,white,lightgreen,white,lightgreen);
+}
+
+</style>
+ 
+
+
+<div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="test2.html">POOR & INCLUDING MIGRATES</a>
+  <a href="thirdpage.html">AGRICULTURE</a>
+  <a href="Business.html">BUINESSES INCLUDEING MEMS </a>
+
+  <a href="ABOUTUS.html">CONTACT US</a>
+  <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignUp</a>
+ 
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+<h1 align="center">Poor Including Migrants</h1>
+</div>
+<style>
+.mySlides {display:none;}
+</style>
+<!--<video  width="100%" height="300px" controls>
+  <source src="agriculture.mp4" type="video/mp4">
+ <source src="agriculture.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>-->
+<table>
+<tr>
+<td>
+<div align="left">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+<style>
+.mySlides {display:none;}
+</style>
+  <img class="mySlides" src="poor.png" height="300px" width="100%">
+  <img class="mySlides" src="public.png" height="300px" width="100%">
+  <img class="mySlides" src="imgp2.jpg" height="300px" width="100%">
+  <img class="mySlides" src="imgp3.jpg" height="300px" width="100%">
+  <img class="mySlides" src="imgp4.jpg" height="300px" width="100%">
+  <img class="mySlides" src="img1.png" height="300px" width="100%">
+<table>
+<tr>
+<td>
+<div align="left">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<style>
+.img{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+</style>
+<table>
+<tr>
+<td>
+<ul><h2>Direct Support to Farmers & Rural Economy provided post COVID</h2>
+
+<ul><li><b>3 crore farmers</b> with agricultural loans of Rs. 4.22 lakhs crore <b>availed the benefit of 3 months loan moratorium.</b></li><br>
+<li>Interest Subvention and Prompt Repayment Incentive on crop loans, due from 1st March, extended up to 31st May, 2020</li><br>
+<li>25 lakh new Kisan Credit Cards sanctioned with a loan limit of Rs. 25,000 cr.</li><br>
+
+<h2>Liquidity Support to Farmers & Rural Economy provided post COVID</h2>
+<ul>
+<li>63 lakh loans of Rs. 86,600 crore approved in Agriculture between 1.3.2020 to 30.04.2020.</li><br>
+<li>Refinancing of Rs.29,500 crore provided by NABARD, to Cooperative Banks & Regional Rural Banks in March,2020.</li><br>
+<li>Support of Rs. 4,200 crore provided under Rural Infrastructure Development Fund to States during March, 2020 for rural infrastructure</li><br>
+<li>Working capital limit of Rs. 6,700 crore sanctioned for procurement of agriculture produce to State Government entities since March, 2020</li><br>
+
+</td>
+<td><ul>
+
+<img class="img" src ="p1.png" height="300px" width="100%"><br>
+
+<img class="img" src ="p3.png" height="300px" width="700px">
+</td>
+</tr>
+
+<tr>
+<td>
+<ul>
+<img class="img" src ="p2.png" height="300px" width="300px">
+</td>
+<td>
+<ul><h2>Support for Migrants and Urban Poor during last 2 months</h2>
+<ul>
+<li>Government of India has permitted State Governments to utilise State Disaster Response Fund (SDRF) for setting up shelter for migrants and providing them food and water etc.</li><br>
+<li>Central Government also released Rs 11002 crore of its contribution in advance to all States on 3rd April, to augment funds in their SDRF.</li><br>
+<li>Hygienically prepared three meals a day provided for the residents of Shelters for Urban Homeless (SUH) during the lockdown w.e.f March 28, 2020.</li><br>
+<li>12,000 SHGs have produced 3 crore masks and 1.20 lakh litres of sanitizers. This gave additional employment opportunity to the urban poor.</li><br>
+<li>Disbursal of Revolving Fund (RF) to Self Help Groups was on-boarded on PAiSA Portal in April 2020 on a pilot basis in Gujarat and is now being rolled out across all the States in May 2020.</li><br>
+<li>7,200 new Self Help Groups of urban poor have been formed during the period starting 15th March, 2020.</li><br>
+</td>
+
+</tr>
+<tr>
+<td>
+<ul><h2>MGNREGS support to returning Migrants</h2>
+<ul>
+<li>14.62 crore person-days of work generated till 13th May 2020</li><br>
+<li>Actual Expenditure till date is around Rs. 10,000 Cr</li><br>
+<li>Work offered to 2.33 Crore wage seekers yesterday in 1.87 Lac Gram Panchayats</li><br>
+<li>40-50% more persons enrolled, compared to May last year</li><br>
+<li>Average wage rate rose to Rs. 202 from Rs. 182 in last FY</li><br>
+<li>Drive being undertaken to enroll returning migrants</li><br>
+<li>States/UTs advised to provide works to migrant workers as per the provisions of the Act</li><br>
+<li>Planning for continuing MNREGA works in Monsoon as well: plantations, horticulture, livestock related sheds</li><br>
+</td>
+<td>
+<img src ="p4.png" height="300px" width="300px" class="img">
+</td>
+</tr>
+<tr>
+<td><ul>
+<img src ="p5.png" height="300px" width="300px" class="img">
+
+
+</td>
+<td>
+<ul><h2>Labour Codes - Benefits for Workers</h2>
+
+<ul>
+<li>Universalization of right of minimum wages and timely payment of wages to all workers including unorganized workers – presently minimum wages applicable to only 30% of workers.</li><br>
+<li>Statutory concept of National Floor Wage introduced: will reduce regional disparity in minimum wages.</li><br>
+<li>Fixation of minimum wages simplified, leading to less number of rates of minimum wages and better compliance.</li><br>
+<li>Appointment letter for all workers- this will promote formalization.</li><br>
+<li>Annual Health Check-up for employees.</li><br>
+<li>Occupational Safety & Health (OSH) Code also applicable to establishments engaged in work of hazardous nature even with threshold of less than 10 workers.</li><br>
+<li>Definition of inter-state migrant worker modified to include migrant workers employed directly by the employer, workers directly coming to destination State of their own besides the migrant workers employed through a contractor.</li><br>
+<li>Portability of welfare benefits for migrant workers.</li><br>
+<li>Extension of ESIC coverage pan-India to all districts and all establishments employing 10 or more employees as against those in notified districts/areas only.</li><br>
+<li>Extension of ESIC coverage to employees working in establishments with less than 10 employees on voluntary basis.</li><br>
+<li>Mandatory ESIC coverage through notification by the Central Government for employees in hazardous industries with less than 10 employees.</li><br>
+<li>Social Security Scheme for Gig workers and Platform workers.</li><br>
+<li>Re-skilling fund introduced for retrenched employees.</li><br>
+<li>All occupations opened for women and permitted to work at night with safeguards.</li><br>
+<li>Provision for Social Security Fund for unorganised workers.</li><br>
+<li>Gratuity for Fixed Tem Employment - Provision of gratuity on completion of one year service as against 5 years.</li><br>
+</td>
+
+</tr>
+</table>
+<tr>
+<td>
+<ul><h2>Measures announce</h2>
+
+<p>A number of measures were announced yesterday for Businesses in general and MSMEs in particular. The measures which will help all businesses are listed again for your understanding:</p>
+<ul>
+<li>Rs 3 lakh crore Emergency Working Capital Facility for Businesses, including MSMEs</li><br>
+
+<li>No Global tenders for Government tenders of upto Rs 200 crore</li><br>
+
+<li>Extending EPF Support for business and organised workers for another 3 months for salary months of June, July and August 2020 - will provide liquidity for workers in MSME and other Businesses</li><br>
+
+<li>EPF Contribution reduced for Employers and Employees for 3 months to 10% from 12% for all establishments for next 3 months for workers not covered by Govt support under PMGKP and its extension - will also help middle class employees - will provide liquidity for workers in MSME and other Businesses</li><br>
+
+<li>Relief to Contractors given by extension of up to six months for completion of contractual obligations, including in respect of EPC and concession agreements</li><br>
+
+<li>Tax relief to business as pending income tax refunds to charitable trusts and non-corporate businesses and professions to be issued immediately</li><br>
+
+<li>Reduction in Rates of "Tax Deduction at Source" and "Tax Collected at Source" by 25% for the remaining period of FY 20-21 and Due Dates for various tax related compliances extended - will benefit all businesses</li><br>
+</td> 
+</tr>
+<table>
+<tr>
+<td>
+<ul><h2>Free Food grain Supply to Migrants for 2 months</h2>
+
+<ul>
+<li>Migrants in various states require food-grain assistance</li><br>
+
+<li>Migrants who are neither NFSA or State Card beneficiaries in the state they are stationed will be provided 5 kg of grains per person and 1 kg Chana per family per month for two months</li><br>
+<li>About 8 crores migrants are expected to benefit.</li><br>
+<li>Rs. 3500 Crore will be spent on this intervention for 2 months</li><br>
+<li>Cost will be fully borne by Government of India</li><br>
+<li>State Governments responsible for implementation, identification of migrants and full distribution and providing detailed guidelines.</li><br>
+<p>Technology Systems to be used enabling Migrants to access Public Distribution System (Ration) from any Fair Price Shop in India by March 2021 - One Nation One Ration Card</p><br>
+<li>Migrant families are not able to access food in other states.</li><br>
+<li>This scheme will enable a migrant beneficiary to access Public Distribution System from any Fair Price Shop in the country (Intra-State portability introduced in 20 States)</li><br>
+<li>Part of the PM’s Technology Driven System Reforms</li><br>
+<li>67 crore beneficiaries in 23 states covering 83% of PDS population will be covered by national portability by August, 2020</li><br>
+<li>100% National portability will be achieved by March, 2021</li><br>
+<li>All the States/UTs will complete full FPS automation by March, 2021</li><br>
+</td>
+<td>
+<img class="img" src ="p6.png" height="300px" width="300px">
+<img class="img" src ="p7.png" height="300px" width="300px">
+</td>
+</tr>
+
+<tr>
+<td>
+<ul><ul><ul><ul><ul>
+<img class="img" src ="p8.png" height="300px" width="300px">
+</td>
+<td>
+<ul><h2>Affordable Rental Housing Complexes (ARHC) for Migrant Workers / Urban Poor</h2>
+<ul>
+<p>Migrant labour/urban poor face challenges in getting houses at affordable rent.</p>
+<p>Government will launch a scheme under PMAY for migrant labour/urban poor to provide ease of living at affordable rent by,</p><br>
+<li>Converting government funded housing in the cities into Affordable Rental Housing Complexes (ARHC) under PPP mode through concessionaire;</li><br>
+<li>Incentivizing manufacturing units, industries, institutions, associations to develop Affordable Rental Housing Complexes (ARHC) on their private land and operate; and</li><br>
+<li>Incentivizing State Government Agencies / Central Government Organizations on the similar lines to develop Affordable Rental Housing Complexes (ARHC) and operate.</li><br>
+<p>Ministry will issue detailed guidelines.</p>
+</td>
+
+</tr>
+</table>
+<table>
+
+<tr>
+<td>
+<h2>Rs. 1500 crores Interest Subvention for MUDRA-Shishu Loans</h2>
+<ul>
+<li>Small businesses under MUDRA have been disrupted the most & has also impacted their capacity to pay EMIs.</li><br>
+<li>Loan moratorium has already been granted by RBI</li><br>
+<li>The current portfolio of MUDRA-Shishu loans is ~ Rs 1.62 Lakh crore (Maximum loan amount of 50,000 Rs).</li><br>
+<li>Government of India will provide Interest subvention of 2% for prompt payees for a period of 12 months.</li><br>
+<li>Relief of Rs 1500 cr to MUDRA-Shishu loanees</li><br>
+
+</td>
+<td>
+<img class="img" src ="p9.png" height="300px" width="300px">
+</td>
+<td>
+<h2>Rs 5000 cr Special Credit Facility for Street Vendors</h2>
+
+<ul>
+<li>Adverse impact on the livelihoods of the street vendors due to COVID-19</li><br>
+<li>Government will launch a special scheme within a month to facilitate easy access to credit to street vendors.</li><br>
+<li>Initial working capital up to Rs. 10,000.</li><br>
+<li>Digital payments will be incentivized through monetary rewards and enhanced working capital credit would be made available for good repayment behavior.</li><br>
+<li>Will support nearly 50 lakh street vendors</li><br>
+<li>Will provide liquidity of Rs 5000 crores</li><br>
+</td>
+<td>
+<img class="img" src ="p10.png" height="300px" width="300px">
+</td>
+</tr>
+
+<tr>
+<td>
+<img class="img" src ="p11.png" height="300px" width="300px">
+</td>
+<td>
+<ul><h2>Rs 70,000 crore boost to housing sector and middle income group through extension of CLSS</h2>
+<ul>
+<li>Credit Linked Subsidy Scheme for Middle Income Group (Annual Income: Rs 6–18 lakhs) was operationalized from May 2017.</li><br>
+<li>CLSS was extended up to 31st March 2020</li><br>
+<li>Scheme has benefitted 3.3 lakh middle class families so far.</li><br>
+<li>Government will extend the CLSS Scheme up to March 2021.</li><br>
+<li>2.5 lakhs middle income families will benefit during 2020-21</li><br>
+<li>Will lead to Investment of over Rs. 70,000 Crores in housing</li><br>
+<li>Will create jobs</li><br>
+<li>Will stimulate demand for steel, cement, transport and other construction materials.</li><br>
+</td>
+
+
+
+
+<td>
+<img class="img" src ="p12.png" height="300px" width="300px">
+</td>
+<td>
+<h2>Rs 6000 crore employment push using CAMPA funds</h2>
+<ul>
+<li>There is need to create job opportunities for our citizens</li><br>
+<li>Compensatory Afforestation Management & Planning Authority (CAMPA) set up under Compensatory Afforestation Fund Act, 2016</li><br>
+<li>Plans worth Rs 6000 crores will be approved shortly.</li><br>
+<li>Funds to be used by State Governments for-</li><br>
+<ul><li>Afforestation and plantation works, including in urban areas</li><br>
+<li>Artificial regeneration, assisted natural regeneration</li><br>
+<li>Forest management, soil & moisture conservation works</li><br>
+<li>Forest protection, forest and wildlife related infrastructure development, wildlife protection and management etc</li><br>
+</ul>
+<li>Will create job opportunities in urban, semi-urban and rural areas.</li><br>
+<li>Will create job opportunities for Tribals /Adivasis</li><br>
+
+</td>
+
+
+
+</tr>
+<tr>
+<td>
+<ul><h2>Rs 30,000 crores Additional Emergency Working Capital Funding for farmers through NABARD</h2>
+<ul>
+<li>Inadequate financial resources with Small and Marginal Farmers</li><br>
+<li>RRBs and Rural Cooperative banks are main source for credit</li><br>
+<li>NABARD will extend additional refinance support of Rs. 30,000 crore for crop loan requirement of Rural Co-op Banks & RRBs.</li><br>
+<li>This is over and above Rs 90,000 crore to be provided by NABARD through the normal refinance route during this year</li><br>
+<li>Front-loaded on-tap facility to 33 State Co-operative banks, 351 District Co-operative banks and 43 RRBs available on tap based on their lending .</li><br>
+<li>To benefit around 3 crore farmers - mostly small and marginal farmers.</li><br>
+<li>To meet post harvest (Rabi) & current Kharif requirement in May/June</li><br>
+</td>
+<td>
+<img class="img" src ="p13.png" height="300px" width="300px">
+</td>
+
+
+<td>
+<ul><h2>Rs 2 lakh crore Concessional credit boost to 2.5 crore farmers through Kisan Credit Cards</h2>
+<ul>
+<li>Special drive to be undertaken to provide concessional credit to PM-KISAN beneficiaries through Kisan Credit Cards</li><br>
+<li>Fishermen and Animal Husbandry farmers will also be included in this drive.</li><br>
+<li>This will enable such farmers to gain access to institutional credit at concessional interest rate</li><br>
+<li>2.5 crore farmers will be covered and will benefit from credit flow of about Rs 2 lakh crores</li><br>
+</td>
+<td>
+<img class="img" src ="p14.png" height="300px" width="300px">
+</td>
+</tr>
+
+</table>
+</style>
+<style>
+.navbar1 {
+  overflow: hidden;
+  background-color:lightgreen;
+  
+}
+
+
+.navbar1 a {
+  float:right;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  opacity:0.9;
+}
+
+
+.navbar1 a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+</style>
+<div class="navbar1">
+  <a href="index.html">HOME</a>
+<a href="ABOUT_US.html">CONTACT US</a>
+  </div>
+  </body>
+</html>
